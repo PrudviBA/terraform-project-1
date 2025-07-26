@@ -111,6 +111,14 @@ terraform init
 ```
 - It’ll ask if you want to copy state from local to remote — type yes.
 ---
+### Step 9: Test the Setup
+🌐 **Verify Web Server**  
+Once `terraform apply` is successful, go to your browser and open the public IP of the EC2 instance (shown in the Terraform output) to see the deployed web page.
+```bash
+http://54.196.199.73 #change the public ip
+```
+---
+
 ## 🧹 Cleanup Resources
 
 To destroy all resources created by Terraform and avoid unnecessary AWS charges, run:
